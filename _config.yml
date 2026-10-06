@@ -1,0 +1,17 @@
+title: yyqy_daily_log
+description: 记录学习、项目与日常思考。
+author: yuuuuuhhha
+url: "https://yuuuuuhhha.github.io"
+baseurl: ""
+timezone: Asia/Shanghai
+lang: zh-CN
+markdown: kramdown
+highlighter: rouge
+permalink: /posts/:title/
+exclude: [README.md, Gemfile, Gemfile.lock]
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

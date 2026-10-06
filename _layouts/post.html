@@ -1,0 +1,4 @@
+---
+layout: default
+---
+<article class="article"><a class="back" href="{{ '/' | relative_url }}">← 返回文章列表</a><p class="eyebrow">{{ page.date | date: '%Y.%m.%d' }}{% for category in page.categories %} · {{ category | escape }}{% endfor %}</p><h1>{{ page.title | escape }}</h1><div class="content">{{ content }}</div></article>

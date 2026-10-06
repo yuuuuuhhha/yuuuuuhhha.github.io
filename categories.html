@@ -1,0 +1,6 @@
+---
+layout: default
+title: 分类
+permalink: /categories/
+---
+<p class="eyebrow">EXPLORE BY TOPIC</p><h1>文章分类</h1>{% assign sorted_categories = site.categories | sort %}{% for category in sorted_categories %}<section class="category"><h2>{{ category[0] | escape }} <small>{{ category[1].size }} 篇</small></h2>{% for post in category[1] %}<p><time>{{ post.date | date: '%Y.%m.%d' }}</time>　<a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></p>{% endfor %}</section>{% endfor %}
